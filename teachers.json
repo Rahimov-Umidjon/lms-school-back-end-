@@ -1,0 +1,22 @@
+[     
+{
+    "class" : 1,
+    "arry"  : [
+      { 
+        "fan": "Alifbe", 
+        "topic" : [
+          {"id" : 1 , "mavzu": "Alifbo harflari", "uyga vazifa": "Alifbo harfini yozish, A harfini o'rganish"},
+          {"id" : 2 , "mavzu": "A va B harflari", "uyga vazifa": "B harfini o'rganish, Alifbo harfini qayta takrorlash"},
+          {"id" : 3 , "mavzu": "A, B, V harflari", "uyga vazifa": "V harfini o'rganish, A harfini takrorlash"},
+          {"id" : 4 , "mavzu": "Alifbo so'zlari", "uyga vazifa": "Alifbo so'zlarini o'qish, So'zlarni yozish"},
+          {"id" : 5 , "mavzu": "O'zbek tilidagi tovushlar", "uyga vazifa": "Tovushlarni yozish, Misollar keltirish"},
+          {"id" : 6 , "mavzu": "Bosh harflar", "uyga vazifa": "Bosh harflar bilan so'zlarni yozish"},
+          {"id" : 7 , "mavzu": "Tovushlar va harflar", "uyga vazifa": "Tovush va harfni ajratish"},
+          {"id" : 8 , "mavzu": "So'zlarning tuzilishi", "uyga vazifa": "So'z tuzishni o'rganish"},
+          {"id" : 9 , "mavzu": "O'qish va yozish mashqlari", "uyga vazifa": "O'qish mashqlari bajarish"},
+          {"id" : 10 , "mavzu": "Harflar o'rtasidagi farq", "uyga vazifa": "Alifbo harflarini ajratish"}
+        ]
+      }
+    ]
+}         
+]

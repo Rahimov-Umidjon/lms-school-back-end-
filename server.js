@@ -6,6 +6,8 @@ const connectDB = require("./config/db");
 const userRoutes = require("./routes/userRoutes");
 const teacherRoutes = require("./routes/teacherRoutes");
 const schoolGalleryRoutes = require('./routes/schoolGalleryRoutes')
+const lessonPlanRoutes = require('./routes/lessonPlans');
+
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -27,6 +29,7 @@ app.use(express.json());
 app.use("/api/teachers", teacherRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/school_gallery", schoolGalleryRoutes);
+app.use('/api/lesson-plans', lessonPlanRoutes);
  
 
 // Serverni ishga tushirish

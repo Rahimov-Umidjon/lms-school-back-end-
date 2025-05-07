@@ -16,6 +16,23 @@ exports.getAllUsers = async (req, res) => {
   }
 };
 
+// 🔥 "role" maydoni "student" bo'lgan foydalanuvchilarni olish
+
+exports.getStudents = async (req, res) => {
+  try {
+      // "role" maydoni "student" bo'lgan foydalanuvchilarni olish
+      const teachers = await User.find({ role: 'student' });
+
+      // Agar student bo'lsa, ularga response yuborish
+      if (teachers.length > 0) {
+          res.status(200).json(teachers);
+      } else {
+          res.status(404).json({ message: "student topilmadi" });
+      }
+  } catch (error) {
+      res.status(500).json({ message: error.message });  // Xato bo'lsa, 500 xato
+  }
+};
 
 // 🔥 "role" maydoni "teacher" bo'lgan foydalanuvchilarni olish
 exports.getTeachers = async (req, res) => {
@@ -140,6 +157,7 @@ exports.login = async (req, res) => {
         email: user.email,
         role: user.role,
         full_name: `${user.last_name} ${user.first_name}`,
+        ...(user.role === "student"  && {class : user.class}),
         token,
         message: "Kirish muvaffaqiyatli"
       }
